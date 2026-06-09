@@ -67,3 +67,98 @@ body {
 .bg-light-section {
   background-color: var(--section-bg);
 }
+
+.profile-photo {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--primary-color);
+}
+
+.skill-badge {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+}
+
+.project-card,
+.accordion-item,
+.modal-content {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.project-card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.project-image {
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  background-color: #ffffff;
+}
+
+.card-title {
+  font-weight: 800;
+}
+
+.card-text,
+.accordion-body,
+.form-label {
+  color: var(--text-color);
+}
+
+.accordion-button {
+  font-weight: 700;
+}
+
+.site-footer {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.site-footer a {
+  color: #dbeafe;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 7rem;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+}
+
+.form-control {
+  border: 2px solid var(--border-color);
+}
+
+.form-control:focus,
+.btn:focus,
+.nav-link:focus,
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem var(--focus-color);
+}
