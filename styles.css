@@ -82,6 +82,13 @@ body {
   font-weight: 700;
 }
 
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .project-card,
 .accordion-item,
 .modal-content {
