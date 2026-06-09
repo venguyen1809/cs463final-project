@@ -1,11 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ve Nguyen | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#home">Ve Nguyen</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#portfolioNavbar"
+            aria-controls="portfolioNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="portfolioNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link icon-link"
+                  href="mailto:phuongve.nina@gmail.com"
+                  aria-label="Email Ve Nguyen"
+                  title="Email Ve Nguyen"
+                  >Email</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link icon-link"
+                  href="https://github.com/venguyen1809"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Ve Nguyen GitHub profile"
+                  title="GitHub"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-7">
+              <p class="section-label">Computer Science Portfolio</p>
+              <h1 class="display-4 fw-bold">Hi, I am Ve Nguyen.</h1>
+              <p class="lead">
+                I build web projects, practice software engineering, and enjoy
+                solving problems with code.
+              </p>
+              <a class="btn btn-primary btn-lg" href="#projects"
+                >View My Projects</a
+              >
+            </div>
+            <div class="col-lg-5 text-center">
+              <img
+                src="images/venguyen.jpg"
+                class="profile-photo"
+                alt="Portrait photo of Ve Nguyen"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="page-section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="row align-items-center gy-4">
+            <div class="col-md-8">
+              <p>
+                My name is Ve Nguyen. I live in Portland, Oregon, and I am
+                pursuing a Computer Science major at Portland State University
+                as a senior student. I am interested in web development,
+                software engineering, soccer, and coding.
+              </p>
+              <p>
+                I am currently looking for internship or new graduate
+                opportunities where I can keep improving my programming skills,
+                work with a team, and build useful software.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="page-section bg-light-section">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid" aria-label="Technical skills list">
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">NASM</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="page-section">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <article class="card project-card h-100">
+                <img
+                  src="images/pokemon.png"
+                  class="card-img-top project-image"
+                  alt="Screenshot of venguyen Pokedex project"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">Pokédex Fetch API Project</h3>
+                  <p class="card-text">
+                    A responsive Pokédex page that fetches Pokémon data from an
+                    API and displays searchable cards.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#pokemonModal"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article class="card project-card h-100">
+                <img
+                  src="images/chocan.png"
+                  class="card-img-top project-image"
+                  alt="Screenshot of Python class code for the ChocAn project"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title">
+                    ChocAn Healthcare Management System
+                  </h3>
+                  <p class="card-text">
+                    A Python terminal project for managing healthcare members,
+                    providers, services, and reports.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#chocanModal"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="page-section bg-light-section">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+
+          <div class="accordion" id="experienceAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="courseworkHeading">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#courseworkCollapse"
+                  aria-expanded="true"
+                  aria-controls="courseworkCollapse"
+                >
+                  Relevant Coursework
+                </button>
+              </h3>
+              <div
+                id="courseworkCollapse"
+                class="accordion-collapse collapse show"
+                aria-labelledby="courseworkHeading"
+                data-bs-parent="#experienceAccordion"
+              >
+                <div class="accordion-body">
+                  I have completed coursework involving web development,
+                  software engineering, data structures, programming, and
+                  computer science fundamentals.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="cs314Heading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cs314Collapse"
+                  aria-expanded="false"
+                  aria-controls="cs314Collapse"
+                >
+                  CS314 Team Project
+                </button>
+              </h3>
+              <div
+                id="cs314Collapse"
+                class="accordion-collapse collapse"
+                aria-labelledby="cs314Heading"
+                data-bs-parent="#experienceAccordion"
+              >
+                <div class="accordion-body">
+                  I worked on a team software project using Python,
+                  object-oriented design, file input/output, validation, and
+                  report generation.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="cs463Heading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cs463Collapse"
+                  aria-expanded="false"
+                  aria-controls="cs463Collapse"
+                >
+                  CS463 Web Development
+                </button>
+              </h3>
+              <div
+                id="cs463Collapse"
+                class="accordion-collapse collapse"
+                aria-labelledby="cs463Heading"
+                data-bs-parent="#experienceAccordion"
+              >
+                <div class="accordion-body">
+                  I practiced HTML, CSS, Bootstrap, JavaScript, Fetch API,
+                  accessibility, responsive design, and debugging.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="softwareHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#softwareCollapse"
+                  aria-expanded="false"
+                  aria-controls="softwareCollapse"
+                >
+                  Software Engineering Concepts
+                </button>
+              </h3>
+              <div
+                id="softwareCollapse"
+                class="accordion-collapse collapse"
+                aria-labelledby="softwareHeading"
+                data-bs-parent="#experienceAccordion"
+              >
+                <div class="accordion-body">
+                  I have practiced requirements, design documents, testing,
+                  debugging, code review, version control, and project
+                  organization.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="pokemonModal"
+      tabindex="-1"
+      aria-labelledby="pokemonModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-4" id="pokemonModalLabel">
+              Pokédex Fetch API Project
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              This project uses JavaScript and the Fetch API to request Pokémon
+              data from an outside API. The page builds Pokémon cards
+              dynamically, displays images and types, and includes a search box
+              so users can filter Pokémon by name or type.
+            </p>
+            <p>
+              This project helped me practice API requests, DOM manipulation,
+              event listeners, responsive layout, loading states, and
+              accessibility with image alt text and labeled form controls.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="chocanModal"
+      tabindex="-1"
+      aria-labelledby="chocanModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-4" id="chocanModalLabel">
+              ChocAn Healthcare Management System
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/chocan2.png"
+              class="img-fluid rounded mb-3"
+              alt="Terminal test of ChocAn healthcare management system"
+            />
+            <p>
+              This Python project manages healthcare members, providers,
+              services, and reports through a terminal-based program. It
+              includes provider validation, member validation, service
+              recording, file reading, and report writing.
+            </p>
+            <p>
+              The project helped me practice object-oriented programming,
+              classes, file input/output, menu design, validation, and teamwork
+              during a software engineering class project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2026 Ve Nguyen. All rights reserved.</p>
+        <a href="mailto:phuongve.nina@gmail.com">phuongve.nina@gmail.com</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
